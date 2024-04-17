@@ -704,11 +704,16 @@ height: 600px; */
   position: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 72px 24px 24px 24px;
+    box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    
 }
 .is-open {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
+  pointer-events:auto;
 }
 .modal {
   width: 408px;
@@ -719,12 +724,13 @@ height: 600px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.2, 0, 0.2, 1);
-  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: transform 250ms cubic-bezier(0.2, 0, 0.2, 1);
+  
+  
   border: 1px solid rgba(0, 0, 0, 0.1); 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+ 
+  
 }
 .modal-close-btn {
   position: absolute;
@@ -740,9 +746,10 @@ height: 600px; */
   background: #e7e9fc;
   padding: 0;
   cursor: pointer;
-  border: 1px solid #2e2f42;
+ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.2, 0, 0.2, 1);
+  
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -755,6 +762,7 @@ height: 600px; */
 }
 .modal-close-icon {
   transition: fill 250ms cubic-bezier(0.2, 0, 0.2, 1);
+  
 }
 .modal-paragraf {
   font-weight: 500;
