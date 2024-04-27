@@ -711,7 +711,7 @@ height: 600px; */
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal {
+.modal-window {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
